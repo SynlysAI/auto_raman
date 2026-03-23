@@ -376,7 +376,7 @@ class LegacyCompatibleController(RamanSpectrometerController):
     def __init__(self, instrument_ip: str, **kwargs):
         super().__init__(instrument_ip, **kwargs)
         self.default_explore_time = 1.0
-        self.default_integer = 5
+        self.default_integer = 1
     
     def scan(self, wavenumber: float, power: float, 
              explore_time: Optional[float] = None,
